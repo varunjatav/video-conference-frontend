@@ -2,7 +2,7 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://video-conference.com/",
+  "homepage": "https://video-conference.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",
