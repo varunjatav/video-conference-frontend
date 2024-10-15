@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {useSelector} from "react-redux";
 import { useNavigate } from "react-router-dom";
-import VideoCall from "../routes/VideoCall";
+// import VideoCall from "../routes/VideoCall";
 
 const HeroImage = () => {
   const {token} = useSelector(state => state.Authentication);
@@ -36,7 +36,7 @@ const HeroImage = () => {
           loading="lazy"
         />
       </div>
-      {toggle &&  <VideoCall toggle={toggle} setToggle={setToggle}/>}
+      {/* {toggle &&  <VideoCall toggle={toggle} setToggle={setToggle}/>} */}
      
     </section>
   );
