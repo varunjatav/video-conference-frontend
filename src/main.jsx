@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorBoundary/>,
     children:[
       {
-        path:"/",
+        index: "/",
         element:<Home/>,
         errorElement: <ErrorBoundary/>,
         
@@ -52,17 +52,17 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path:'/login',
+        path:'login',
         element: <Login/>,
         errorElement: <ErrorBoundary/>,
       },
       {
-        path: "/sign-up",
+        path: "sign-up",
         element: <SignUp/>,
         errorElement: <ErrorBoundary/>,
       },
       {
-          path: "/account-settings",
+          path: "account-settings",
           element: <AccountSettings/>,
           errorElement: <ErrorBoundary/>,
           children: [
@@ -73,11 +73,12 @@ const router = createBrowserRouter([
           ]
       },
       {
-        path:"/reset-password",
+        path:"reset-password",
         element: <ResetPassword/>
       },
      
     ],
+    basename: "/video-conference-frontend"
 },
 
 
