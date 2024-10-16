@@ -1,8 +1,8 @@
-{
+{ 
+  "homepage": "https://varunjatav.github.io/video-conference-frontend/",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://video-conference.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
