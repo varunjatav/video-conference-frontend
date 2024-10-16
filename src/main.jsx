@@ -21,13 +21,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorBoundary/>,
-    children:[
+    errorElement: <ErrorBoundary />,
+    children: [
       {
         index: "/",
-        element:<Home/>,
-        errorElement: <ErrorBoundary/>,
-        
+        element: <Home />,
+        errorElement: <ErrorBoundary />,
+
         children: [
           {
             index: true,
@@ -52,38 +52,35 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path:'login',
-        element: <Login/>,
-        errorElement: <ErrorBoundary/>,
+        path: "login",
+        element: <Login />,
+        errorElement: <ErrorBoundary />,
       },
       {
         path: "sign-up",
-        element: <SignUp/>,
-        errorElement: <ErrorBoundary/>,
+        element: <SignUp />,
+        errorElement: <ErrorBoundary />,
       },
       {
-          path: "account-settings",
-          element: <AccountSettings/>,
-          errorElement: <ErrorBoundary/>,
-          children: [
-            {
-              index: true,
-              element: <AccountUpdate/>
-            },
-          ]
+        path: "account-settings",
+        element: <AccountSettings />,
+        errorElement: <ErrorBoundary />,
+        children: [
+          {
+            index: true,
+            element: <AccountUpdate />,
+          },
+        ],
       },
       {
-        path:"reset-password",
-        element: <ResetPassword/>
+        path: "reset-password",
+        element: <ResetPassword />,
       },
-     
     ],
-    basename: "/video-conference-frontend"
-},
-
-
-
-
+  },
+  {
+    basename: "/video-conference-frontend",
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
