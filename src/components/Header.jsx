@@ -47,7 +47,7 @@ const Header = () => {
 
     dispatch(AuthenticationActions.logout());
     // Redirect the user to a different route, like the login page
-    navigate("/login");
+    navigate("/video-conference-frontend/login");
   };
   // console.log("isLogedIn", isLoggedIn);
   // console.log("token", token);
@@ -56,7 +56,7 @@ const Header = () => {
     <header className="z-10 mx-auto p-4 flex flex-row text-center fixed top-0 bg-white w-full">
       <section className="basis-1/4 ">
         <LinkRouter
-          to="/"
+          to="/video-conference-frontend/"
           className=" flex items-center justify-center gap-4 cursor-pointer"
         >
           <IoIosVideocam className="text-2xl text-blue" />
@@ -65,7 +65,7 @@ const Header = () => {
       </section>
       <nav className="basis-1/2 flex items-center justify-center gap-4">
         <LinkRouter
-          to="/"
+          to="/video-conference-frontend/"
           className="text-sm font-bold font-sans cursor-pointer hover:text-blue active:text-blue"
         >
           Home
@@ -87,13 +87,13 @@ const Header = () => {
       {!isLoggedIn ? (
         <section className="basis-1/4 flex items-center justify-center gap-4">
           <LinkRouter
-            to="sign-up"
+            to="/video-conference-frontend/sign-up"
             className="text-xs border-solid border-2 text-blue border-blue p-2 rounded-3xl hover:bg-blue hover:text-white"
           >
             Sign Up
           </LinkRouter>
           <LinkRouter
-            to="login"
+            to="/video-conference-frontend/login"
             className="text-xs border-solid border-2 text-blue border-blue p-2 rounded-3xl hover:bg-blue hover:text-white"
           >
             Log In
@@ -124,7 +124,7 @@ const Header = () => {
               <div className="py-1">
                 <MenuItem>
                   <LinkRouter
-                    to="/account-settings"
+                    to="/video-conference-frontend/account-settings"
                     className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   >
                     Account settings

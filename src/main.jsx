@@ -19,12 +19,12 @@ import ResetPassword from "./routes/ResetPassword.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/video-conference-frontend/",
     element: <App />,
     errorElement: <ErrorBoundary />,
     children: [
       {
-        index: "/",
+        index: "/video-conference-frontend/",
         element: <Home />,
         errorElement: <ErrorBoundary />,
 
@@ -52,17 +52,17 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "login",
+        path: "/video-conference-frontend/login",
         element: <Login />,
         errorElement: <ErrorBoundary />,
       },
       {
-        path: "sign-up",
+        path: "/video-conference-frontend/sign-up",
         element: <SignUp />,
         errorElement: <ErrorBoundary />,
       },
       {
-        path: "account-settings",
+        path: "/video-conference-frontend/account-settings",
         element: <AccountSettings />,
         errorElement: <ErrorBoundary />,
         children: [
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "reset-password",
+        path: "/video-conference-frontend/reset-password",
         element: <ResetPassword />,
       },
     ],
