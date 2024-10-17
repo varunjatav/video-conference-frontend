@@ -5,6 +5,8 @@ import axios from "axios";
 // const api = "http://localhost:3000/api";
 // console.log(process.env.API);
 // console.log(import.meta.env.VITE_API_KEY);
+console.log(import.meta.env.VITE_API_KEY);
+
 export const apiClient = axios.create({
     baseURL: import.meta.env.VITE_API_KEY,
   });

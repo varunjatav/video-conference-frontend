@@ -52,17 +52,17 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "/video-conference-frontend/login",
+        path: "login",
         element: <Login />,
         errorElement: <ErrorBoundary />,
       },
       {
-        path: "/video-conference-frontend/sign-up",
+        path: "sign-up",
         element: <SignUp />,
         errorElement: <ErrorBoundary />,
       },
       {
-        path: "/video-conference-frontend/account-settings",
+        path: "account-settings",
         element: <AccountSettings />,
         errorElement: <ErrorBoundary />,
         children: [
@@ -74,7 +74,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "/video-conference-frontend/reset-password",
+        path: "reset-password",
         element: <ResetPassword />,
         errorElement: <ErrorBoundary />,
       },
