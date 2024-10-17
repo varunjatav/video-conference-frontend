@@ -48,8 +48,8 @@ const Login = () => {
   }
 
   return (
-    <section className='container w-1/2 p-5 m-auto pt-20'>
-        <h2 className='font-bold text-center text-3xl font-sans '>Login to Roomify</h2>
+    <section className='w-1/2 p-10 m-auto pt-36'>
+        <h2 className='font-bold text-center text-3xl font-sans'>Login to Roomify</h2>
             <form action="" className='p-8 flex flex-col gap-4 justify-center' onSubmit={handleSubmit}>
                 <label htmlFor="email" className='font-semibold font-sans'>Email:</label>
                 <input name='email' type="email" placeholder='Enter Your Email here' className='border border-gray-light rounded-lg p-2 focus:outline-none focus:ring focus:ring-blue' onChange={handleChange} value={loginData.email} />
