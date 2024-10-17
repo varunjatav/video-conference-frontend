@@ -87,13 +87,13 @@ const Header = () => {
       {!isLoggedIn ? (
         <section className="basis-1/4 flex items-center justify-center gap-4">
           <LinkRouter
-            to="/video-conference-frontend/sign-up"
+            to="sign-up"
             className="text-xs border-solid border-2 text-blue border-blue p-2 rounded-3xl hover:bg-blue hover:text-white"
           >
             Sign Up
           </LinkRouter>
           <LinkRouter
-            to="/video-conference-frontend/login"
+            to="login"
             className="text-xs border-solid border-2 text-blue border-blue p-2 rounded-3xl hover:bg-blue hover:text-white"
           >
             Log In
@@ -124,7 +124,7 @@ const Header = () => {
               <div className="py-1">
                 <MenuItem>
                   <LinkRouter
-                    to="/video-conference-frontend/account-settings"
+                    to="account-settings"
                     className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                   >
                     Account settings
