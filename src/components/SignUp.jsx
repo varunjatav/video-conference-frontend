@@ -76,7 +76,7 @@ console.log(userId);
         </form>
         <p className="px-8 text-sm pb-4 ">
           Have an Account ?{" "}
-          <LinkRouter to="/video-conference-frontend/login" className="text-dark-blue ">
+          <LinkRouter to="login" className="text-dark-blue ">
             Login
           </LinkRouter>
         </p>
