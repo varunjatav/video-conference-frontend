@@ -7,7 +7,9 @@ config();
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/video-conference-frontend/",
   define: {
-    'process.env': process.env
+    'process.env': process.env,
+    
   },
 })

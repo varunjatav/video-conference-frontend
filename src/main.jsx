@@ -78,9 +78,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    basename: "/video-conference-frontend",
-  },
 ]);
 
 createRoot(document.getElementById("root")).render(
