@@ -47,7 +47,7 @@ const Header = () => {
 
     dispatch(AuthenticationActions.logout());
     // Redirect the user to a different route, like the login page
-    navigate("/video-conference-frontend/login");
+    navigate("login");
   };
   // console.log("isLogedIn", isLoggedIn);
   // console.log("token", token);
