@@ -58,7 +58,7 @@ const Login = () => {
                 <p className='text-xs font-bold text-blue text-right cursor-pointer' onClick={handleForgetPassword}>Forget Password ??</p>
                 <input type="submit" value={loading ? "Loading..." : "Login"} className='bg-dark-blue text-white p-2 rounded-xl cursor-pointer' />
             </form>
-            <p className='px-8 text-sm '>Don't Have Account ? <LinkRouter to="sign-up" className='text-dark-blue '>Sign Up</LinkRouter></p>
+            <p className='px-8 text-sm '>Don't Have Account ? <LinkRouter to="/video-conference-frontend/sign-up" className='text-dark-blue '>Sign Up</LinkRouter></p>
            
             {
               error && <Alert/>
