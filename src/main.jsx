@@ -69,12 +69,14 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <AccountUpdate />,
+            errorElement: <ErrorBoundary />,
           },
         ],
       },
       {
         path: "/video-conference-frontend/reset-password",
         element: <ResetPassword />,
+        errorElement: <ErrorBoundary />,
       },
     ],
   },

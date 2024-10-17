@@ -24,7 +24,7 @@ console.log(userId);
   };
 
   return (
-    <section className="container w-full p-10 flex flex-row pt-20">
+    <section className="flex w-full p-10 pt-20">
       <div className="flex-1 w-1/2 py-7">
         <h2 className="font-bold text-3xl font-sans ">SignUp With Roomify</h2>
         <form
@@ -76,7 +76,7 @@ console.log(userId);
         </form>
         <p className="px-8 text-sm pb-4 ">
           Have an Account ?{" "}
-          <LinkRouter to="/login" className="text-dark-blue ">
+          <LinkRouter to="/video-conference-frontend/login" className="text-dark-blue ">
             Login
           </LinkRouter>
         </p>

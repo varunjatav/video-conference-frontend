@@ -54,7 +54,7 @@ const Header = () => {
 
   return (
     <header className="z-10 mx-auto p-4 flex flex-row text-center fixed top-0 bg-white w-full">
-      <section className="basis-1/4 ">
+      <section className="basis-1/4">
         <LinkRouter
           to="/video-conference-frontend/"
           className=" flex items-center justify-center gap-4 cursor-pointer"
