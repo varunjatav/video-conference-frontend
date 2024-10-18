@@ -2,10 +2,7 @@ import axios from "axios";
 // create a Axios client which is also called instance which can be configured with default
 // settings and reused accross your application ...
 
-// const api = "http://localhost:3000/api";
-// console.log(process.env.API);
-// console.log(import.meta.env.VITE_API_KEY);
-console.log(import.meta.env.VITE_API_KEY);
+
 
 export const apiClient = axios.create({
     baseURL: import.meta.env.VITE_API_KEY,

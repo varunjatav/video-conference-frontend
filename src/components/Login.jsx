@@ -11,13 +11,13 @@ const Login = () => {
   const dispatch = useDispatch();
   const {loginData , error, success , loading ,token,refreshToken ,userId} = useSelector(state => state.Authentication);
   const userState = useSelector(state => state.users);
-  console.log(userState);
+
  
   const handleChange = (e) => {
     const {name, value}  = e.target;
     dispatch(AuthenticationActions.setLoginData({name,value}));
   };
-  console.log("userId :", userId);
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const Login = () => {
       localStorage.setItem('userId', userId);
     }
   }, [success, token, refreshToken, navigate]);
-  console.log(localStorage.getItem('userId')); 
+
   const handleForgetPassword = () => {
     dispatch(forgotPassword(userId || localStorage.getItem('userId')));
   }

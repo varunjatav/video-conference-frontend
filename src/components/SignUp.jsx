@@ -10,8 +10,7 @@ const SignUp = () => {
   const dispatch = useDispatch();
   const { formData, error, loading , success , userId } = useSelector((state) => state.Authentication);
 
-  // console.log(formData, error, loading, success);
-console.log(userId);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     dispatch(AuthenticationActions.setFormData({ name, value }));
